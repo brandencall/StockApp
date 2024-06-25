@@ -1,0 +1,27 @@
+﻿** Highlights
+     Tables that will be recreated with data migrated
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       The type for column FinancialTableId in table [dbo].[Units] is currently  NCHAR (30) NOT NULL but is being changed to 
+         INT NOT NULL. Data loss could occur and deployment may fail if the column contains data that is incompatible with type 
+         INT NOT NULL.
+
+** User actions
+     Rename
+       [dbo].[Units].[FinancialTableId] (Column)
+     Alter
+       [dbo].[Units] (Table)
+     Create
+       [dbo].[FinancialTables] (Table)
+       [dbo].[FK_Units_FinancialTables] (Foreign Key)
+
+** Supporting actions
+     Refresh
+       [dbo].[spUnitType_Insert] (Procedure)
+
+The type for column FinancialTableId in table [dbo].[Units] is currently  NCHAR (30) NOT NULL but is being changed to  INT NOT NULL. Data loss could occur and deployment may fail if the column contains data that is incompatible with type  INT NOT NULL.
+

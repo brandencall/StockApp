@@ -1,0 +1,69 @@
+.container{
+    padding: 35px;
+}
+
+.top_container{
+    display: flex;
+    padding-bottom: 10px;
+}
+.company_info_contianer{
+    display: flex;
+    flex-direction: column;
+}
+.searchbar_contianer {
+    margin-left: auto;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.ticker{
+    font-weight: bold;
+}
+
+.cik {
+    font-size: 16px;
+}
+
+.toggle_button_container{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0px 5px 0px;
+}
+
+.toggle_container{
+    display: flex;
+}
+
+.toggle_label {
+    font-size: 16px;
+    padding-right: 5px;
+}
+
+.abbreviated_comment {
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.table_button {
+    background-color: white;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    border-color: white;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.table_button_active {
+    color: hsl(202, 100%, 40%);
+    background-color: hsl(198, 100%, 61%, .15);
+}
+
+.table_button:hover {
+    color: hsl(202, 100%, 40%);
+}

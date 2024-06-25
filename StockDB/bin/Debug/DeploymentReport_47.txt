@@ -1,0 +1,22 @@
+﻿** Highlights
+     Tables that will be recreated with data migrated
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Drop
+       [dbo].[CurrencyPerShareValues].[idx_currencypersharevalues_financialfactid] (Index)
+       [dbo].[CurrencyValues].[idx_currencyvalues_financialfactid] (Index)
+       [dbo].[FinancialAttributeConfig].[idx_financialattributeconfig_financialattributeid] (Index)
+       [dbo].[FinancialFacts].[idx_financialfacts_unitid] (Index)
+       [dbo].[ShareValues].[idx_sharevalues_financialfactid] (Index)
+       [dbo].[StockFinances].[idx_stockfinances_financialattributeid] (Index)
+       [dbo].[StockFinances].[idx_stockfinances_financialfactid] (Index)
+       [dbo].[StockFinances].[idx_stockfinances_stockid] (Index)
+
+** Supporting actions

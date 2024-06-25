@@ -1,0 +1,7 @@
+﻿CREATE TABLE [dbo].[Stocks]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
+    [CIK] CHAR(10) NOT NULL , 
+    [Ticker] NVARCHAR(20) NOT NULL, 
+    [Name] NVARCHAR(500) NOT NULL
+)

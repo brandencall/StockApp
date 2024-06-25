@@ -1,0 +1,10 @@
+C:\Projects\CSharp\StockApp\StockDB\bin\Debug\StockDB.dacpac
+C:\Projects\CSharp\StockApp\StockDB\bin\Debug\StockDB.dll
+C:\Projects\CSharp\StockApp\StockDB\bin\Debug\StockDB.pdb
+C:\Projects\CSharp\StockApp\StockDB\obj\Debug\StockDB.sqlproj.AssemblyReference.cache
+C:\Projects\CSharp\StockApp\StockDB\obj\Debug\Model.xml
+C:\Projects\CSharp\StockApp\StockDB\obj\Debug\refactor.xml
+C:\Projects\CSharp\StockApp\StockDB\obj\Debug\postdeploy.sql
+C:\Projects\CSharp\StockApp\StockDB\obj\Debug\predeploy.sql
+C:\Projects\CSharp\StockApp\StockDB\obj\Debug\StockDB.dll
+C:\Projects\CSharp\StockApp\StockDB\obj\Debug\StockDB.pdb

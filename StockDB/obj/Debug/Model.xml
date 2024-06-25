@@ -1,0 +1,3034 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DataSchemaModel FileFormatVersion="1.2" SchemaVersion="2.9" DspName="Microsoft.Data.Tools.Schema.Sql.Sql160DatabaseSchemaProvider" CollationLcid="1033" CollationCaseSensitive="False" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+	<Header>
+		<CustomData Category="AnsiNulls">
+			<Metadata Name="AnsiNulls" Value="True" />
+		</CustomData>
+		<CustomData Category="QuotedIdentifier">
+			<Metadata Name="QuotedIdentifier" Value="True" />
+		</CustomData>
+		<CustomData Category="CompatibilityMode">
+			<Metadata Name="CompatibilityMode" Value="160" />
+		</CustomData>
+		<CustomData Category="Reference" Type="Assembly">
+			<Metadata Name="LogicalName" Value="StockDB.dll" />
+			<Metadata Name="FileName" Value="C:\PROJECTS\CSHARP\STOCKAPP\STOCKDB\OBJ\DEBUG\STOCKDB.DLL" />
+			<Metadata Name="AssemblyName" Value="StockDB" />
+			<Metadata Name="PermissionSet" Value="SAFE" />
+			<Metadata Name="Owner" Value="" />
+			<Metadata Name="GenerateSqlClrDdl" Value="True" />
+			<Metadata Name="IsVisible" Value="True" />
+			<Metadata Name="IsModelAware" Value="True" />
+			<Metadata Name="SkipCreationIfEmpty" Value="True" />
+			<Metadata Name="AssemblySymbolsName" Value="C:\Projects\CSharp\StockApp\StockDB\obj\Debug\StockDB.pdb" />
+		</CustomData>
+		<CustomData Category="SqlCmdVariables" Type="SqlCmdVariable" />
+	</Header>
+	<Model>
+		<Element Type="SqlDatabaseOptions">
+			<Property Name="Collation" Value="SQL_Latin1_General_CP1_CI_AS" />
+			<Property Name="IsAnsiNullDefaultOn" Value="True" />
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Property Name="IsAnsiWarningsOn" Value="True" />
+			<Property Name="IsArithAbortOn" Value="True" />
+			<Property Name="IsConcatNullYieldsNullOn" Value="True" />
+			<Property Name="IsTornPageProtectionOn" Value="False" />
+			<Property Name="IsFullTextEnabled" Value="True" />
+			<Property Name="PageVerifyMode" Value="3" />
+			<Property Name="DefaultLanguage" Value="" />
+			<Property Name="DefaultFullTextLanguage" Value="" />
+			<Property Name="QueryStoreStaleQueryThreshold" Value="367" />
+			<Relationship Name="DefaultFilegroup">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[PRIMARY]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlPrimaryKeyConstraint">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="SqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[FinancialTables].[Id]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[FinancialTables]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="3" />
+		</Element>
+		<Element Type="SqlPrimaryKeyConstraint">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="SqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[CurrencyPerShareValues].[Id]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[CurrencyPerShareValues]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="4" />
+		</Element>
+		<Element Type="SqlPrimaryKeyConstraint">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="SqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[ShareValues].[Id]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[ShareValues]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="5" />
+		</Element>
+		<Element Type="SqlPrimaryKeyConstraint">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="SqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[CurrencyValues].[Id]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[CurrencyValues]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="6" />
+		</Element>
+		<Element Type="SqlPrimaryKeyConstraint">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="SqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[StockFinances].[Id]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[StockFinances]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="7" />
+		</Element>
+		<Element Type="SqlPrimaryKeyConstraint">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="SqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[FinancialFacts].[Id]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[FinancialFacts]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="8" />
+		</Element>
+		<Element Type="SqlPrimaryKeyConstraint">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="SqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[Units].[Id]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Units]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="9" />
+		</Element>
+		<Element Type="SqlPrimaryKeyConstraint">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="SqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[FinancialAttributes].[Id]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[FinancialAttributes]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="10" />
+		</Element>
+		<Element Type="SqlPrimaryKeyConstraint">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="SqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[Stocks].[Id]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Stocks]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="11" />
+		</Element>
+		<Element Type="SqlPrimaryKeyConstraint">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="SqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[FinancialAttributeConfig].[Id]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[FinancialAttributeConfig]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="12" />
+		</Element>
+		<Element Type="SqlTable" Name="[dbo].[CurrencyPerShareValues]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[CurrencyPerShareValues].[Id]">
+						<Property Name="IsNullable" Value="False" />
+						<Property Name="IsIdentity" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<AttachedAnnotation Disambiguator="4" />
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[CurrencyPerShareValues].[Value]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Scale" Value="4" />
+									<Property Name="Precision" Value="18" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[decimal]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[CurrencyPerShareValues].[FinancialFactId]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="13" />
+		</Element>
+		<Element Type="SqlTable" Name="[dbo].[CurrencyValues]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[CurrencyValues].[Id]">
+						<Property Name="IsNullable" Value="False" />
+						<Property Name="IsIdentity" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<AttachedAnnotation Disambiguator="6" />
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[CurrencyValues].[Value]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[money]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[CurrencyValues].[FinancialFactId]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="14" />
+		</Element>
+		<Element Type="SqlTable" Name="[dbo].[FinancialAttributeConfig]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[FinancialAttributeConfig].[Id]">
+						<Property Name="IsNullable" Value="False" />
+						<Property Name="IsIdentity" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<AttachedAnnotation Disambiguator="12" />
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[FinancialAttributeConfig].[FinancialAttributeId]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[FinancialAttributeConfig].[Title]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="500" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[FinancialAttributeConfig].[DisplayName]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="500" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="15" />
+		</Element>
+		<Element Type="SqlTable" Name="[dbo].[FinancialAttributes]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[FinancialAttributes].[Id]">
+						<Property Name="IsNullable" Value="False" />
+						<Property Name="IsIdentity" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<AttachedAnnotation Disambiguator="10" />
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[FinancialAttributes].[Title]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="500" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[FinancialAttributes].[Label]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="1000" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[FinancialAttributes].[Description]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="IsMax" Value="True" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlTable" Name="[dbo].[FinancialFacts]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[FinancialFacts].[Id]">
+						<Property Name="IsNullable" Value="False" />
+						<Property Name="IsIdentity" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<AttachedAnnotation Disambiguator="8" />
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[FinancialFacts].[UnitId]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[FinancialFacts].[StartDate]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[date]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[FinancialFacts].[EndDate]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[date]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[FinancialFacts].[FiscalYear]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="4" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[FinancialFacts].[FiscalPeriod]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="2" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[FinancialFacts].[Form]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="15" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[FinancialFacts].[Filed]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[date]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[FinancialFacts].[Frame]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="9" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="16" />
+		</Element>
+		<Element Type="SqlTable" Name="[dbo].[FinancialTables]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[FinancialTables].[Id]">
+						<Property Name="IsNullable" Value="False" />
+						<Property Name="IsIdentity" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<AttachedAnnotation Disambiguator="3" />
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[FinancialTables].[Name]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_CurrencyPerShareValues_FinancialFacts]">
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[dbo].[CurrencyPerShareValues].[FinancialFactId]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[CurrencyPerShareValues]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[dbo].[FinancialFacts].[Id]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[dbo].[FinancialFacts]" />
+				</Entry>
+			</Relationship>
+			<AttachedAnnotation Disambiguator="13" />
+		</Element>
+		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_CurrencyValues_FinancialFacts]">
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[dbo].[CurrencyValues].[FinancialFactId]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[CurrencyValues]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[dbo].[FinancialFacts].[Id]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[dbo].[FinancialFacts]" />
+				</Entry>
+			</Relationship>
+			<AttachedAnnotation Disambiguator="14" />
+		</Element>
+		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_FinancialAttributeConfig_FinancialAttributes]">
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[dbo].[FinancialAttributeConfig].[FinancialAttributeId]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[FinancialAttributeConfig]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[dbo].[FinancialAttributes].[Id]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[dbo].[FinancialAttributes]" />
+				</Entry>
+			</Relationship>
+			<AttachedAnnotation Disambiguator="15" />
+		</Element>
+		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_FinancialFacts_Units]">
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[dbo].[FinancialFacts].[UnitId]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[FinancialFacts]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[dbo].[Units].[Id]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[dbo].[Units]" />
+				</Entry>
+			</Relationship>
+			<AttachedAnnotation Disambiguator="16" />
+		</Element>
+		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_ShareValues_FinancialFacts]">
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[dbo].[ShareValues].[FinancialFactId]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[ShareValues]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[dbo].[FinancialFacts].[Id]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[dbo].[FinancialFacts]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="17" />
+		</Element>
+		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_StockFinances_FinacialAttributes]">
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[dbo].[StockFinances].[FinancialAttributeId]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[StockFinances]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[dbo].[FinancialAttributes].[Id]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[dbo].[FinancialAttributes]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="18" />
+		</Element>
+		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_StockFinances_FinancialFacts]">
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[dbo].[StockFinances].[FinancialFactId]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[StockFinances]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[dbo].[FinancialFacts].[Id]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[dbo].[FinancialFacts]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="19" />
+		</Element>
+		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_StockFinances_Stocks]">
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[dbo].[StockFinances].[StockId]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[StockFinances]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[dbo].[Stocks].[Id]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[dbo].[Stocks]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="20" />
+		</Element>
+		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_Units_FinancialTables]">
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[dbo].[Units].[FinancialTableId]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Units]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[dbo].[FinancialTables].[Id]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[dbo].[FinancialTables]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="21" />
+		</Element>
+		<Element Type="SqlTable" Name="[dbo].[ShareValues]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[ShareValues].[Id]">
+						<Property Name="IsNullable" Value="False" />
+						<Property Name="IsIdentity" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<AttachedAnnotation Disambiguator="5" />
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[ShareValues].[Value]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[bigint]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[ShareValues].[FinancialFactId]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<AttachedAnnotation Disambiguator="17" />
+		</Element>
+		<Element Type="SqlProcedure" Name="[dbo].[spCurrencyPerShareValues_Insert]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+begin
+	set nocount on;
+
+	insert into dbo.CurrencyPerShareValues (FinancialFactId, Value)
+	values (@financialFactId, @value)
+end]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[CurrencyPerShareValues]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[CurrencyPerShareValues].[FinancialFactId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[CurrencyPerShareValues].[Value]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[spCurrencyPerShareValues_Insert].[@financialFactId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[spCurrencyPerShareValues_Insert].[@value]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[spCurrencyPerShareValues_Insert].[@financialFactId]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[spCurrencyPerShareValues_Insert].[@value]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Scale" Value="4" />
+									<Property Name="Precision" Value="18" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[decimal]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="241" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[spCurrencyPerShareValues_Insert]&#xD;&#xA;&#x9;@financialFactId int,&#xD;&#xA;&#x9;@value decimal(18,4)&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="SqlProcedure" Name="[dbo].[spCurrencyValues_Insert]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+begin
+	set nocount on;
+
+	insert into dbo.CurrencyValues (FinancialFactId, Value)
+	values (@financialFactId, @value)
+end]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[CurrencyValues]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[CurrencyValues].[FinancialFactId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[CurrencyValues].[Value]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[spCurrencyValues_Insert].[@financialFactId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[spCurrencyValues_Insert].[@value]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[spCurrencyValues_Insert].[@financialFactId]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[spCurrencyValues_Insert].[@value]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[money]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="217" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[spCurrencyValues_Insert]&#xD;&#xA;&#x9;@financialFactId int,&#xD;&#xA;&#x9;@value money&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="SqlProcedure" Name="[dbo].[spFinancialAttributes_Insert]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+begin
+	set nocount on;
+
+	if not exists (select 1 from dbo.FinancialAttributes where Title = @title)
+	begin
+		insert into dbo.FinancialAttributes (Title, Label, Description)
+		values (@title, @label, @description)
+	end
+
+	select top 1 [Id], [Title], [Label], [Description]
+	from dbo.FinancialAttributes
+	where Title = @title
+end]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[FinancialAttributes]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FinancialAttributes].[Title]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[spFinancialAttributes_Insert].[@title]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FinancialAttributes].[Title]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FinancialAttributes].[Label]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FinancialAttributes].[Description]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[spFinancialAttributes_Insert].[@label]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[spFinancialAttributes_Insert].[@description]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FinancialAttributes].[Id]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[spFinancialAttributes_Insert].[@title]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="500" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[spFinancialAttributes_Insert].[@label]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="1000" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[spFinancialAttributes_Insert].[@description]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="IsMax" Value="True" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="475" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[spFinancialAttributes_Insert]&#xD;&#xA;&#x9;@title nvarchar(500),&#xD;&#xA;&#x9;@label nvarchar(1000),&#xD;&#xA;&#x9;@description nvarchar(MAX)&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="SqlProcedure" Name="[dbo].[spFinancialData_GetStocksWithFeatureList]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+begin
+	set nocount on;
+
+	WITH MarketCap2024 AS (
+    SELECT
+        s.CIK,
+        s.Ticker,
+        ff.FiscalYear,
+        ff.EndDate,
+        cv.Value AS CurrencyValue
+    FROM
+        dbo.StockFinances sf
+        INNER JOIN dbo.Stocks s ON sf.StockId = s.Id
+        INNER JOIN dbo.FinancialAttributes fa ON sf.FinancialAttributeId = fa.Id
+        INNER JOIN dbo.FinancialFacts ff ON sf.FinancialFactId = ff.Id
+        INNER JOIN dbo.Units u ON ff.UnitId = u.Id
+        LEFT JOIN dbo.CurrencyValues cv ON sf.FinancialFactId = cv.FinancialFactId
+        LEFT JOIN dbo.ShareValues sv ON sf.FinancialFactId = sv.FinancialFactId
+        LEFT JOIN dbo.CurrencyPerShareValues cpsv ON sf.FinancialFactId = cpsv.FinancialFactId
+    WHERE
+        ff.FiscalYear = @labelYear
+        AND fa.Title = 'MarketCapitalization'
+    ), 
+    DistinctStocks AS (
+        SELECT
+            s.Id,
+            s.CIK,
+            s.Ticker,
+            s.Name
+        FROM
+            dbo.StockFinances sf
+            INNER JOIN dbo.Stocks s ON sf.StockId = s.Id
+            INNER JOIN dbo.FinancialAttributes fa ON sf.FinancialAttributeId = fa.Id
+            INNER JOIN dbo.FinancialFacts ff ON sf.FinancialFactId = ff.Id
+        WHERE
+            fa.Title IN (
+                'RevenueFromContractWithCustomerExcludingAssessedTax', 'NetIncomeLoss', 'OperatingIncomeLoss', 'AccountsReceivableNetCurrent', 'AssetsCurrent', 'LiabilitiesCurrent',
+			    'StockholdersEquity', 'CashAndCashEquivalentsAtCarryingValue'
+            )
+            AND (ff.Form = '10-K' OR ff.Form = '20-F' OR ff.Form = '10-K/A' OR ff.Form IS NULL)
+            AND ff.EndDate LIKE '%' + @year + '%'
+            AND ff.FiscalYear = @year
+        GROUP BY
+            s.Id,
+            s.CIK,
+            s.Ticker,
+            s.Name
+        HAVING
+            COUNT(DISTINCT fa.Title) = 8 -- Number of fa.Title values in the IN list minus MarketCapitalization
+    )
+
+    SELECT
+        ds.CIK,
+        ds.Ticker,
+        ff.FiscalYear,
+        MAX(CASE WHEN fa.Title = 'MarketCapitalization' THEN m.CurrencyValue END) AS NextYearMarketCap,
+         MAX(CASE WHEN fa.Title = 'RevenueFromContractWithCustomerExcludingAssessedTax' THEN cv.Value END) AS NetSales,
+        MAX(CASE WHEN fa.Title = 'NetIncomeLoss' THEN cv.Value END) AS NetIncomeLoss,
+	    MAX(CASE WHEN fa.Title = 'OperatingIncomeLoss' THEN cv.Value END) AS OperatingIncomeLoss,
+	    MAX(CASE WHEN fa.Title = 'AccountsReceivableNetCurrent' THEN cv.Value END) AS AccountsReceivableNetCurrent,
+	    MAX(CASE WHEN fa.Title = 'AssetsCurrent' THEN cv.Value END) AS AssetsCurrent,
+	    MAX(CASE WHEN fa.Title = 'LiabilitiesCurrent' THEN cv.Value END) AS LiabilitiesCurrent,
+	    MAX(CASE WHEN fa.Title = 'StockholdersEquity' THEN cv.Value END) AS StockholdersEquity,
+	    MAX(CASE WHEN fa.Title = 'CashAndCashEquivalentsAtCarryingValue' THEN cv.Value END) AS CashAndCashEquivalentsAtCarryingValue
+    FROM
+        DistinctStocks ds
+        INNER JOIN dbo.StockFinances sf ON sf.StockId = ds.Id
+        INNER JOIN dbo.FinancialAttributes fa ON sf.FinancialAttributeId = fa.Id
+        INNER JOIN dbo.FinancialFacts ff ON sf.FinancialFactId = ff.Id
+        INNER JOIN dbo.Units u ON ff.UnitId = u.Id
+        LEFT JOIN dbo.CurrencyValues cv ON sf.FinancialFactId = cv.FinancialFactId
+        LEFT JOIN MarketCap2024 m ON ds.Ticker = m.Ticker
+    WHERE
+        fa.Title IN (
+            'MarketCapitalization','RevenueFromContractWithCustomerExcludingAssessedTax', 'NetIncomeLoss', 'OperatingIncomeLoss', 'AccountsReceivableNetCurrent', 'AssetsCurrent', 'LiabilitiesCurrent',
+			'StockholdersEquity', 'CashAndCashEquivalentsAtCarryingValue'
+        )
+        AND (ff.Form = '10-K' OR ff.Form = '20-F' OR ff.Form = '10-K/A' OR ff.Form IS NULL)
+        AND ff.EndDate LIKE '%' + @year + '%'
+        AND ff.FiscalYear = @year
+    GROUP BY
+        ds.CIK,
+        ds.Ticker,
+        ff.FiscalYear
+    Having
+	    MAX(CASE WHEN fa.Title = 'MarketCapitalization' THEN m.CurrencyValue END) IS NOT NULL
+    ORDER BY
+        ds.Ticker;
+end]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[StockFinances]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Stocks]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[StockFinances].[StockId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Stocks].[Id]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FinancialAttributes]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[StockFinances].[FinancialAttributeId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FinancialAttributes].[Id]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FinancialFacts]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[StockFinances].[FinancialFactId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FinancialFacts].[Id]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Units]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FinancialFacts].[UnitId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Units].[Id]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[CurrencyValues]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[StockFinances].[FinancialFactId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[CurrencyValues].[FinancialFactId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ShareValues]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[StockFinances].[FinancialFactId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ShareValues].[FinancialFactId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[CurrencyPerShareValues]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[StockFinances].[FinancialFactId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[CurrencyPerShareValues].[FinancialFactId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Stocks].[CIK]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Stocks].[Ticker]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FinancialFacts].[FiscalYear]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FinancialFacts].[EndDate]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[CurrencyValues].[Value]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[spFinancialData_GetStocksWithFeatureList].[@labelYear]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FinancialAttributes].[Title]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Stocks].[Id]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Stocks].[CIK]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Stocks].[Ticker]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Stocks].[Name]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FinancialAttributes].[Title]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FinancialFacts].[Form]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FinancialFacts].[EndDate]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[spFinancialData_GetStocksWithFeatureList].[@year]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FinancialFacts].[FiscalYear]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[StockFinances].[StockId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Stocks].[Id]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[StockFinances].[FinancialAttributeId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FinancialAttributes].[Id]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[StockFinances].[FinancialFactId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FinancialFacts].[Id]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FinancialFacts].[UnitId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Units].[Id]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[StockFinances].[FinancialFactId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[CurrencyValues].[FinancialFactId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Stocks].[Ticker]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Stocks].[Ticker]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Stocks].[CIK]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FinancialFacts].[FiscalYear]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FinancialAttributes].[Title]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[CurrencyValues].[Value]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[CurrencyValues].[Value]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FinancialFacts].[Form]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FinancialFacts].[EndDate]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DynamicObjects">
+				<Entry>
+					<Element Type="SqlDynamicColumnSource" Name="[dbo].[spFinancialData_GetStocksWithFeatureList].[CTE1].[MarketCap2024]">
+						<Relationship Name="Columns">
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[dbo].[spFinancialData_GetStocksWithFeatureList].[CTE1].[MarketCap2024].[CIK]">
+									<Relationship Name="ExpressionDependencies">
+										<Entry>
+											<References Name="[dbo].[Stocks].[CIK]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[dbo].[spFinancialData_GetStocksWithFeatureList].[CTE1].[MarketCap2024].[Ticker]">
+									<Relationship Name="ExpressionDependencies">
+										<Entry>
+											<References Name="[dbo].[Stocks].[Ticker]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[dbo].[spFinancialData_GetStocksWithFeatureList].[CTE1].[MarketCap2024].[FiscalYear]">
+									<Relationship Name="ExpressionDependencies">
+										<Entry>
+											<References Name="[dbo].[FinancialFacts].[FiscalYear]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[dbo].[spFinancialData_GetStocksWithFeatureList].[CTE1].[MarketCap2024].[EndDate]">
+									<Relationship Name="ExpressionDependencies">
+										<Entry>
+											<References Name="[dbo].[FinancialFacts].[EndDate]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[dbo].[spFinancialData_GetStocksWithFeatureList].[CTE1].[MarketCap2024].[CurrencyValue]">
+									<Relationship Name="ExpressionDependencies">
+										<Entry>
+											<References Name="[dbo].[CurrencyValues].[Value]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlDynamicColumnSource" Name="[dbo].[spFinancialData_GetStocksWithFeatureList].[CTE1].[DistinctStocks]">
+						<Relationship Name="Columns">
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[dbo].[spFinancialData_GetStocksWithFeatureList].[CTE1].[DistinctStocks].[Id]">
+									<Relationship Name="ExpressionDependencies">
+										<Entry>
+											<References Name="[dbo].[Stocks].[Id]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[dbo].[spFinancialData_GetStocksWithFeatureList].[CTE1].[DistinctStocks].[CIK]">
+									<Relationship Name="ExpressionDependencies">
+										<Entry>
+											<References Name="[dbo].[Stocks].[CIK]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[dbo].[spFinancialData_GetStocksWithFeatureList].[CTE1].[DistinctStocks].[Ticker]">
+									<Relationship Name="ExpressionDependencies">
+										<Entry>
+											<References Name="[dbo].[Stocks].[Ticker]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[dbo].[spFinancialData_GetStocksWithFeatureList].[CTE1].[DistinctStocks].[Name]">
+									<Relationship Name="ExpressionDependencies">
+										<Entry>
+											<References Name="[dbo].[Stocks].[Name]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[spFinancialData_GetStocksWithFeatureList].[@year]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="4" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[char]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[spFinancialData_GetStocksWithFeatureList].[@labelYear]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="4" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[char]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="4233" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[spFinancialData_GetStocksWithFeatureList]&#xD;&#xA;&#x9;@year char(4),&#xD;&#xA;    @labelYear char(4)&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="SqlProcedure" Name="[dbo].[spFinancialDataApi_GetAnnual]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+begin
+	set nocount on;
+
+	WITH RankedFinances AS (
+    SELECT 
+        s.Ticker,
+        s.Name,
+        fa.Title,
+        fa.Label,
+        ff.FiscalYear,
+        fac.DisplayName,
+        cv.Value AS CurrencyValue,
+        ROW_NUMBER() OVER (
+            PARTITION BY fa.Title, ff.FiscalYear 
+            ORDER BY ff.EndDate DESC
+        ) AS RowNum
+    FROM
+        dbo.StockFinances sf
+    INNER JOIN dbo.Stocks s ON sf.StockId = s.Id
+    INNER JOIN dbo.FinancialAttributes fa ON sf.FinancialAttributeId = fa.Id
+    INNER JOIN dbo.FinancialFacts ff ON sf.FinancialFactId = ff.Id
+    INNER JOIN dbo.Units u ON ff.UnitId = u.Id
+    LEFT JOIN dbo.CurrencyValues cv ON sf.FinancialFactId = cv.FinancialFactId
+    LEFT JOIN dbo.ShareValues sv ON sf.FinancialFactId = sv.FinancialFactId
+    LEFT JOIN dbo.CurrencyPerShareValues cpsv ON sf.FinancialFactId = cpsv.FinancialFactId
+    INNER JOIN dbo.FinancialAttributeConfig fac on fac.FinancialAttributeId = fa.Id
+    WHERE 
+		s.Id = @stockId 
+		AND (ff.Form LIKE '%10-K%' OR ff.Form LIKE '%20-F%')
+        AND u.Type = 'USD'
+)
+SELECT 
+    Ticker,
+    Name,
+    Title,
+    Label,
+    DisplayName,
+    FiscalYear,
+    CurrencyValue
+FROM 
+    RankedFinances
+WHERE 
+    RowNum = 1
+ORDER BY 
+    Title, FiscalYear DESC;
+
+end]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[StockFinances]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Stocks]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[StockFinances].[StockId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Stocks].[Id]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FinancialAttributes]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[StockFinances].[FinancialAttributeId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FinancialAttributes].[Id]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FinancialFacts]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[StockFinances].[FinancialFactId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FinancialFacts].[Id]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Units]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FinancialFacts].[UnitId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Units].[Id]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[CurrencyValues]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[StockFinances].[FinancialFactId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[CurrencyValues].[FinancialFactId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ShareValues]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[StockFinances].[FinancialFactId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ShareValues].[FinancialFactId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[CurrencyPerShareValues]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[StockFinances].[FinancialFactId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[CurrencyPerShareValues].[FinancialFactId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FinancialAttributeConfig]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FinancialAttributeConfig].[FinancialAttributeId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FinancialAttributes].[Id]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Stocks].[Ticker]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Stocks].[Name]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FinancialAttributes].[Title]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FinancialAttributes].[Label]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FinancialFacts].[FiscalYear]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FinancialAttributeConfig].[DisplayName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[CurrencyValues].[Value]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FinancialFacts].[EndDate]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Stocks].[Id]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[spFinancialDataApi_GetAnnual].[@stockId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FinancialFacts].[Form]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Units].[Type]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Stocks].[Ticker]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Stocks].[Name]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FinancialAttributes].[Title]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FinancialAttributes].[Label]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FinancialAttributeConfig].[DisplayName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FinancialFacts].[FiscalYear]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[CurrencyValues].[Value]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DynamicObjects">
+				<Entry>
+					<Element Type="SqlDynamicColumnSource" Name="[dbo].[spFinancialDataApi_GetAnnual].[CTE1].[RankedFinances]">
+						<Relationship Name="Columns">
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[dbo].[spFinancialDataApi_GetAnnual].[CTE1].[RankedFinances].[Ticker]">
+									<Relationship Name="ExpressionDependencies">
+										<Entry>
+											<References Name="[dbo].[Stocks].[Ticker]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[dbo].[spFinancialDataApi_GetAnnual].[CTE1].[RankedFinances].[Name]">
+									<Relationship Name="ExpressionDependencies">
+										<Entry>
+											<References Name="[dbo].[Stocks].[Name]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[dbo].[spFinancialDataApi_GetAnnual].[CTE1].[RankedFinances].[Title]">
+									<Relationship Name="ExpressionDependencies">
+										<Entry>
+											<References Name="[dbo].[FinancialAttributes].[Title]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[dbo].[spFinancialDataApi_GetAnnual].[CTE1].[RankedFinances].[Label]">
+									<Relationship Name="ExpressionDependencies">
+										<Entry>
+											<References Name="[dbo].[FinancialAttributes].[Label]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[dbo].[spFinancialDataApi_GetAnnual].[CTE1].[RankedFinances].[FiscalYear]">
+									<Relationship Name="ExpressionDependencies">
+										<Entry>
+											<References Name="[dbo].[FinancialFacts].[FiscalYear]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[dbo].[spFinancialDataApi_GetAnnual].[CTE1].[RankedFinances].[DisplayName]">
+									<Relationship Name="ExpressionDependencies">
+										<Entry>
+											<References Name="[dbo].[FinancialAttributeConfig].[DisplayName]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[dbo].[spFinancialDataApi_GetAnnual].[CTE1].[RankedFinances].[CurrencyValue]">
+									<Relationship Name="ExpressionDependencies">
+										<Entry>
+											<References Name="[dbo].[CurrencyValues].[Value]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="SqlComputedColumn" Name="[dbo].[spFinancialDataApi_GetAnnual].[CTE1].[RankedFinances].[RowNum]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[spFinancialDataApi_GetAnnual].[@stockId]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="1384" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[spFinancialDataApi_GetAnnual]&#xD;&#xA;&#x9;@stockId int&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="SqlProcedure" Name="[dbo].[spFinancialDataApi_GetQuarterly]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+begin
+	set nocount on;
+
+	SELECT 
+		fa.Title,
+		fa.Label,
+		fac.DisplayName,
+		ff.Frame,
+		cv.Value AS CurrencyValue
+	FROM
+		dbo.StockFinances sf
+		INNER JOIN dbo.Stocks s ON sf.StockId = s.Id
+		INNER JOIN dbo.FinancialAttributes fa ON sf.FinancialAttributeId = fa.Id
+		INNER JOIN dbo.FinancialFacts ff ON sf.FinancialFactId = ff.Id
+		INNER JOIN dbo.Units u ON ff.UnitId = u.Id
+		LEFT JOIN dbo.CurrencyValues cv ON sf.FinancialFactId = cv.FinancialFactId
+		LEFT JOIN dbo.ShareValues sv ON sf.FinancialFactId = sv.FinancialFactId
+		LEFT JOIN dbo.CurrencyPerShareValues cpsv ON sf.FinancialFactId = cpsv.FinancialFactId
+		INNER JOIN dbo.FinancialAttributeConfig fac on fac.FinancialAttributeId = fa.Id
+	WHERE 
+		s.Id = @stockId
+		AND u.Type = 'USD'
+		AND Frame IS NOT NULL
+	ORDER BY 
+		fa.Title, FiscalYear DESC, Frame DESC;
+
+end]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[StockFinances]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Stocks]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[StockFinances].[StockId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Stocks].[Id]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FinancialAttributes]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[StockFinances].[FinancialAttributeId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FinancialAttributes].[Id]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FinancialFacts]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[StockFinances].[FinancialFactId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FinancialFacts].[Id]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Units]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FinancialFacts].[UnitId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Units].[Id]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[CurrencyValues]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[StockFinances].[FinancialFactId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[CurrencyValues].[FinancialFactId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ShareValues]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[StockFinances].[FinancialFactId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ShareValues].[FinancialFactId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[CurrencyPerShareValues]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[StockFinances].[FinancialFactId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[CurrencyPerShareValues].[FinancialFactId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FinancialAttributeConfig]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FinancialAttributeConfig].[FinancialAttributeId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FinancialAttributes].[Id]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FinancialAttributes].[Title]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FinancialAttributes].[Label]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FinancialAttributeConfig].[DisplayName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FinancialFacts].[Frame]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[CurrencyValues].[Value]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Stocks].[Id]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[spFinancialDataApi_GetQuarterly].[@stockId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Units].[Type]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FinancialFacts].[Frame]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FinancialFacts].[FiscalYear]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[spFinancialDataApi_GetQuarterly].[@stockId]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="929" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[spFinancialDataApi_GetQuarterly]&#xD;&#xA;&#x9;@stockId int&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="SqlProcedure" Name="[dbo].[spFinancialFact_Delete]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+begin
+	set nocount on;
+
+	delete from dbo.FinancialFacts where Id = @financialFactId
+end]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[FinancialFacts]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FinancialFacts].[Id]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[spFinancialFact_Delete].[@financialFactId]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[spFinancialFact_Delete].[@financialFactId]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="167" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[spFinancialFact_Delete]&#xD;&#xA;&#x9;@financialFactId int&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="SqlProcedure" Name="[dbo].[spFinancialFacts_Insert]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+begin 
+	set nocount on;
+
+	insert into dbo.FinancialFacts (UnitId, StartDate, EndDate, FiscalYear, FiscalPeriod, Form, Filed, Frame)
+	values (@unitId, @startDate, @endDate, @fiscalYear, @fiscalPeriod, @form, @filed, @frame)
+
+	select SCOPE_IDENTITY() as Id;
+end]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[FinancialFacts]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FinancialFacts].[UnitId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FinancialFacts].[StartDate]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FinancialFacts].[EndDate]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FinancialFacts].[FiscalYear]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FinancialFacts].[FiscalPeriod]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FinancialFacts].[Form]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FinancialFacts].[Filed]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FinancialFacts].[Frame]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[spFinancialFacts_Insert].[@unitId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[spFinancialFacts_Insert].[@startDate]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[spFinancialFacts_Insert].[@endDate]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[spFinancialFacts_Insert].[@fiscalYear]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[spFinancialFacts_Insert].[@fiscalPeriod]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[spFinancialFacts_Insert].[@form]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[spFinancialFacts_Insert].[@filed]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[spFinancialFacts_Insert].[@frame]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[spFinancialFacts_Insert].[@unitId]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[spFinancialFacts_Insert].[@startDate]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[date]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[spFinancialFacts_Insert].[@endDate]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[date]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[spFinancialFacts_Insert].[@fiscalYear]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="4" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[spFinancialFacts_Insert].[@fiscalPeriod]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="2" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[spFinancialFacts_Insert].[@form]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="15" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[spFinancialFacts_Insert].[@filed]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[date]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[spFinancialFacts_Insert].[@frame]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="9" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="479" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[spFinancialFacts_Insert]&#xD;&#xA;&#x9;@unitId int,&#xD;&#xA;&#x9;@startDate date,&#xD;&#xA;&#x9;@endDate date,&#xD;&#xA;&#x9;@fiscalYear nchar(4),&#xD;&#xA;&#x9;@fiscalPeriod nchar(2),&#xD;&#xA;&#x9;@form nvarchar(15),&#xD;&#xA;&#x9;@filed date,&#xD;&#xA;&#x9;@frame nvarchar(9)&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="SqlProcedure" Name="[dbo].[spShareValues_Insert]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+begin
+	set nocount on;
+
+	insert into dbo.ShareValues (FinancialFactId, Value)
+	values (@financialFactId, @value)
+end]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[ShareValues]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ShareValues].[FinancialFactId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ShareValues].[Value]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[spShareValues_Insert].[@financialFactId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[spShareValues_Insert].[@value]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[spShareValues_Insert].[@financialFactId]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[spShareValues_Insert].[@value]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[bigint]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="212" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[spShareValues_Insert]&#xD;&#xA;&#x9;@financialFactId int,&#xD;&#xA;&#x9;@value bigint&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="SqlProcedure" Name="[dbo].[spStockFinances_Insert]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+begin
+	set nocount on;
+
+	insert into dbo.StockFinances (StockId, FinancialAttributeId, FinancialFactId)
+	values (@stockId, @financialAttributeId, @financialFactsId)
+end]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[StockFinances]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[StockFinances].[StockId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[StockFinances].[FinancialAttributeId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[StockFinances].[FinancialFactId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[spStockFinances_Insert].[@stockId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[spStockFinances_Insert].[@financialAttributeId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[spStockFinances_Insert].[@financialFactsId]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[spStockFinances_Insert].[@stockId]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[spStockFinances_Insert].[@financialAttributeId]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[spStockFinances_Insert].[@financialFactsId]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="295" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[spStockFinances_Insert]&#xD;&#xA;&#x9;@stockId int,&#xD;&#xA;&#x9;@financialAttributeId int,&#xD;&#xA;&#x9;@financialFactsId int&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="SqlProcedure" Name="[dbo].[spStocks_GetAllCIKs]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+begin
+	set nocount on;
+	
+	select CIK from dbo.Stocks
+end]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[Stocks]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Stocks].[CIK]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="113" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[spStocks_GetAllCIKs]&#xD;&#xA;&#x9;&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="SqlProcedure" Name="[dbo].[spStocks_GetAllStocks]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+begin
+	set nocount on;
+	
+	select [Id], [CIK], [Ticker], [Name] from dbo.Stocks
+end]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[Stocks]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Stocks].[Id]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Stocks].[CIK]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Stocks].[Ticker]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Stocks].[Name]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="140" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[spStocks_GetAllStocks]&#xD;&#xA;&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="SqlProcedure" Name="[dbo].[spStocks_GetbyCIK]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+begin
+	set nocount on;
+	
+	select top 1 [Id], [CIK], [Ticker], [Name]
+	from dbo.Stocks 
+	where CIK = @cik
+end]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[Stocks]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Stocks].[Id]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Stocks].[CIK]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Stocks].[Ticker]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Stocks].[Name]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[spStocks_GetbyCIK].[@cik]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[spStocks_GetbyCIK].[@cik]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="10" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[char]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="178" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[spStocks_GetbyCIK]&#xD;&#xA;&#x9;@cik char(10)&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="SqlProcedure" Name="[dbo].[spStocks_Insert]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+begin
+	set nocount on;
+	if not exists (select 1 from dbo.Stocks where CIK = @cik)
+	begin
+		insert into dbo.Stocks (CIK, Ticker, Name)
+		values (@cik, @ticker, @name);
+	end
+end]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[Stocks]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Stocks].[CIK]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[spStocks_Insert].[@cik]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Stocks].[CIK]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Stocks].[Ticker]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Stocks].[Name]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[spStocks_Insert].[@ticker]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[spStocks_Insert].[@name]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[spStocks_Insert].[@cik]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="10" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[char]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[spStocks_Insert].[@ticker]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="20" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[spStocks_Insert].[@name]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="500" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="291" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[spStocks_Insert]&#xD;&#xA;&#x9;@cik char(10),&#xD;&#xA;&#x9;@ticker nvarchar(20),&#xD;&#xA;&#x9;@name nvarchar(500)&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="SqlProcedure" Name="[dbo].[spUnits_GetByType]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+begin
+	set nocount on;
+
+	select top 1 [Id], [Type], [FinancialTableId]
+	from dbo.Units
+	where Type = @unitTypeString
+end]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[Units]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Units].[Id]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Units].[Type]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Units].[FinancialTableId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[spUnits_GetByType].[@unitTypeString]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[spUnits_GetByType].[@unitTypeString]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="20" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="207" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[spUnits_GetByType]&#xD;&#xA;&#x9;@unitTypeString nvarchar(20)&#xD;&#xA;&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="SqlTable" Name="[dbo].[StockFinances]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[StockFinances].[Id]">
+						<Property Name="IsNullable" Value="False" />
+						<Property Name="IsIdentity" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<AttachedAnnotation Disambiguator="7" />
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[StockFinances].[StockId]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[StockFinances].[FinancialAttributeId]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[StockFinances].[FinancialFactId]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<AttachedAnnotation Disambiguator="20" />
+			<AttachedAnnotation Disambiguator="18" />
+			<AttachedAnnotation Disambiguator="19" />
+		</Element>
+		<Element Type="SqlTable" Name="[dbo].[Stocks]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Stocks].[Id]">
+						<Property Name="IsNullable" Value="False" />
+						<Property Name="IsIdentity" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<AttachedAnnotation Disambiguator="11" />
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Stocks].[CIK]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="10" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[char]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Stocks].[Ticker]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="20" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Stocks].[Name]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="500" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlTable" Name="[dbo].[Units]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Units].[Id]">
+						<Property Name="IsNullable" Value="False" />
+						<Property Name="IsIdentity" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<AttachedAnnotation Disambiguator="9" />
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Units].[Type]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="20" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Units].[FinancialTableId]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<AttachedAnnotation Disambiguator="21" />
+		</Element>
+	</Model>
+</DataSchemaModel>

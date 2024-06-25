@@ -1,0 +1,34 @@
+﻿** Highlights
+     Tables that will be recreated with data migrated
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [dbo].[CurrencyPerShareValues] (Table)
+       [dbo].[CurrencyValues] (Table)
+       [dbo].[FinancialAttributes] (Table)
+       [dbo].[FinancialFacts] (Table)
+       [dbo].[ShareValues] (Table)
+       [dbo].[StockFinances] (Table)
+       [dbo].[Stocks] (Table)
+       [dbo].[Units] (Table)
+       [dbo].[FK_CurrencyPerShareValues_FinancialFacts] (Foreign Key)
+       [dbo].[FK_CurrencyValues_FinancialFacts] (Foreign Key)
+       [dbo].[FK_FinancialFacts_Units] (Foreign Key)
+       [dbo].[FK_ShareValues_FinancialFacts] (Foreign Key)
+       [dbo].[FK_StockFinances_Stocks] (Foreign Key)
+       [dbo].[FK_StockFinances_FinacialAttributes] (Foreign Key)
+       [dbo].[FK_StockFinances_FinancialFacts] (Foreign Key)
+       [dbo].[spFinancialAttributes_Insert] (Procedure)
+       [dbo].[spFinancialFacts_Insert] (Procedure)
+       [dbo].[spStocks_GetbyCIK] (Procedure)
+       [dbo].[spStocks_Insert] (Procedure)
+       [dbo].[spUnitType_Insert] (Procedure)
+
+** Supporting actions

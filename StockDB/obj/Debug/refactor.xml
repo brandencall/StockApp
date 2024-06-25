@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0">
+  <Operation Name="Rename Refactor" Key="1e311bfa-6e1d-47bd-9c49-f8ed1bc2fe98" ChangeDateTime="03/22/2024 16:32:54" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[Stocks].[CIk]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Stocks]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CIK" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="656d4bc0-e8dd-440a-9ea5-723c94b26c8b" ChangeDateTime="03/22/2024 17:01:07" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[FinancialFacts].[Files]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[FinancialFacts]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Filed" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="4f77d707-2623-407c-b6a7-fabce0a7da3d" ChangeDateTime="03/22/2024 17:12:21" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[StockFinances].[StockID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[StockFinances]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="StockId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="6ccf3c72-7bf4-4e98-b31d-41ac7407cae0" ChangeDateTime="03/22/2024 17:12:24" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[StockFinances].[FinancialAttributeID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[StockFinances]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="FinancialAttributeId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ad2aa342-65c1-41fa-83e2-36c997805332" ChangeDateTime="03/22/2024 17:12:28" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[StockFinances].[FinancialFactID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[StockFinances]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="FinancialFactId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a0ea5060-0b85-46f0-a4f0-1aa1e1f43fd6" ChangeDateTime="03/22/2024 17:14:39" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[FinancialFacts].[UnitID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[FinancialFacts]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="UnitId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="549ff517-90de-4fa7-8584-7ca1bcb22c75" ChangeDateTime="03/27/2024 17:55:33" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[Units].[FinancialTable]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Units]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="FinancialTableId" />
+  </Operation>
+</Operations>

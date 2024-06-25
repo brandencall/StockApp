@@ -1,0 +1,12 @@
+C:\Projects\CSharp\StockApp\DataAccessLibrary\bin\Debug\net6.0\DataAccessLibrary.deps.json
+C:\Projects\CSharp\StockApp\DataAccessLibrary\bin\Debug\net6.0\DataAccessLibrary.dll
+C:\Projects\CSharp\StockApp\DataAccessLibrary\bin\Debug\net6.0\DataAccessLibrary.pdb
+C:\Projects\CSharp\StockApp\DataAccessLibrary\obj\Debug\net6.0\DataAccessLibrary.csproj.AssemblyReference.cache
+C:\Projects\CSharp\StockApp\DataAccessLibrary\obj\Debug\net6.0\DataAccessLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\CSharp\StockApp\DataAccessLibrary\obj\Debug\net6.0\DataAccessLibrary.AssemblyInfoInputs.cache
+C:\Projects\CSharp\StockApp\DataAccessLibrary\obj\Debug\net6.0\DataAccessLibrary.AssemblyInfo.cs
+C:\Projects\CSharp\StockApp\DataAccessLibrary\obj\Debug\net6.0\DataAccessLibrary.csproj.CoreCompileInputs.cache
+C:\Projects\CSharp\StockApp\DataAccessLibrary\obj\Debug\net6.0\DataAccessLibrary.dll
+C:\Projects\CSharp\StockApp\DataAccessLibrary\obj\Debug\net6.0\refint\DataAccessLibrary.dll
+C:\Projects\CSharp\StockApp\DataAccessLibrary\obj\Debug\net6.0\DataAccessLibrary.pdb
+C:\Projects\CSharp\StockApp\DataAccessLibrary\obj\Debug\net6.0\ref\DataAccessLibrary.dll

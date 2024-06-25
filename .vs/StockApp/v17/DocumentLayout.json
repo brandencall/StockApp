@@ -1,0 +1,125 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Projects\\CSharp\\StockApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{37439C1F-E476-4CD9-B63E-018CA28288FA}|stock-app\\stock-app.esproj|c:\\projects\\csharp\\stockapp\\stock-app\\src\\api\\stockservice.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{37439C1F-E476-4CD9-B63E-018CA28288FA}|stock-app\\stock-app.esproj|solutionrelative:stock-app\\src\\api\\stockservice.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37439C1F-E476-4CD9-B63E-018CA28288FA}|stock-app\\stock-app.esproj|c:\\projects\\csharp\\stockapp\\stock-app\\src\\components\\app\\app.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{37439C1F-E476-4CD9-B63E-018CA28288FA}|stock-app\\stock-app.esproj|solutionrelative:stock-app\\src\\components\\app\\app.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37439C1F-E476-4CD9-B63E-018CA28288FA}|stock-app\\stock-app.esproj|c:\\projects\\csharp\\stockapp\\stock-app\\src\\components\\searchbar\\searchbar.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{37439C1F-E476-4CD9-B63E-018CA28288FA}|stock-app\\stock-app.esproj|solutionrelative:stock-app\\src\\components\\searchbar\\searchbar.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37439C1F-E476-4CD9-B63E-018CA28288FA}|stock-app\\stock-app.esproj|c:\\projects\\csharp\\stockapp\\stock-app\\src\\components\\stockfinancialpage\\stockfinancialpage.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{37439C1F-E476-4CD9-B63E-018CA28288FA}|stock-app\\stock-app.esproj|solutionrelative:stock-app\\src\\components\\stockfinancialpage\\stockfinancialpage.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37439C1F-E476-4CD9-B63E-018CA28288FA}|stock-app\\stock-app.esproj|c:\\projects\\csharp\\stockapp\\stock-app\\src\\components\\stockfinancialpage\\linechart\\linechart.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{37439C1F-E476-4CD9-B63E-018CA28288FA}|stock-app\\stock-app.esproj|solutionrelative:stock-app\\src\\components\\stockfinancialpage\\linechart\\linechart.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StockService.ts",
+              "DocumentMoniker": "C:\\Projects\\CSharp\\StockApp\\stock-app\\src\\api\\StockService.ts",
+              "RelativeDocumentMoniker": "stock-app\\src\\api\\StockService.ts",
+              "ToolTip": "C:\\Projects\\CSharp\\StockApp\\stock-app\\src\\api\\StockService.ts",
+              "RelativeToolTip": "stock-app\\src\\api\\StockService.ts",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-06-25T14:58:22.88Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SearchBar.tsx",
+              "DocumentMoniker": "C:\\Projects\\CSharp\\StockApp\\stock-app\\src\\Components\\SearchBar\\SearchBar.tsx",
+              "RelativeDocumentMoniker": "stock-app\\src\\Components\\SearchBar\\SearchBar.tsx",
+              "ToolTip": "C:\\Projects\\CSharp\\StockApp\\stock-app\\src\\Components\\SearchBar\\SearchBar.tsx",
+              "RelativeToolTip": "stock-app\\src\\Components\\SearchBar\\SearchBar.tsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-06-25T14:46:33.728Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LineChart.tsx",
+              "DocumentMoniker": "C:\\Projects\\CSharp\\StockApp\\stock-app\\src\\Components\\StockFinancialPage\\LineChart\\LineChart.tsx",
+              "RelativeDocumentMoniker": "stock-app\\src\\Components\\StockFinancialPage\\LineChart\\LineChart.tsx",
+              "ToolTip": "C:\\Projects\\CSharp\\StockApp\\stock-app\\src\\Components\\StockFinancialPage\\LineChart\\LineChart.tsx",
+              "RelativeToolTip": "stock-app\\src\\Components\\StockFinancialPage\\LineChart\\LineChart.tsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-06-24T22:16:32.656Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "App.tsx",
+              "DocumentMoniker": "C:\\Projects\\CSharp\\StockApp\\stock-app\\src\\Components\\App\\App.tsx",
+              "RelativeDocumentMoniker": "stock-app\\src\\Components\\App\\App.tsx",
+              "ToolTip": "C:\\Projects\\CSharp\\StockApp\\stock-app\\src\\Components\\App\\App.tsx",
+              "RelativeToolTip": "stock-app\\src\\Components\\App\\App.tsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-06-24T22:01:06.515Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StockFinancialPage.tsx",
+              "DocumentMoniker": "C:\\Projects\\CSharp\\StockApp\\stock-app\\src\\Components\\StockFinancialPage\\StockFinancialPage.tsx",
+              "RelativeDocumentMoniker": "stock-app\\src\\Components\\StockFinancialPage\\StockFinancialPage.tsx",
+              "ToolTip": "C:\\Projects\\CSharp\\StockApp\\stock-app\\src\\Components\\StockFinancialPage\\StockFinancialPage.tsx",
+              "RelativeToolTip": "stock-app\\src\\Components\\StockFinancialPage\\StockFinancialPage.tsx",
+              "ViewState": "AQIAABEAAAAAAAAAAAAQwD4AAABPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-06-21T21:33:06.318Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
