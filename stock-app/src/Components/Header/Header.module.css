@@ -1,0 +1,5 @@
+.header_main {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 5% 0px 5%;
+}
