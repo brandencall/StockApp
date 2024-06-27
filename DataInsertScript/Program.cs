@@ -26,7 +26,7 @@ class Program
             var dataAccess = Startup.serviceProvider.GetService<DataAccessService>();
             List<CIKModel> ciks = dataAccess.GetAllCIKs();
 
-            for (int i = 6436; i < ciks.Count; i++)
+            for (int i = 0; i < ciks.Count; i++)
             {
                 Console.WriteLine("Populating: " + ciks[i].CIK);
                 await edgarAPI.PopulateStockFinancials(ciks[i].CIK);
