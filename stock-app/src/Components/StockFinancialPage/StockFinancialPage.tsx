@@ -20,8 +20,8 @@ function StockFinancialPage() {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     function fetchData(state: any) {
         try {
-            fetchStockAnnualData(setAnnualData, state.id)
-            fetchStockQuarterlyData(setQuarterlyData, state.id)
+            fetchStockAnnualData(setAnnualData, state.id, state.ticker)
+            fetchStockQuarterlyData(setQuarterlyData, state.id, state.ticker)
         } catch (error) {
             console.error('Error fetching data:', error)
         }

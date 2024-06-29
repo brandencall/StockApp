@@ -31,10 +31,14 @@ function SearchBar() {
 
     const onSearch = (searchTerm: Stock) => {
         if (searchTerm !== null) {
+
             const id: number = searchTerm.id
             const ticker: string = searchTerm.ticker
             const name: string = searchTerm.name
             const cik: string = searchTerm.cik
+
+            setValue('')
+
             navigate(`/stock/${ticker}`, {
                 state: { id: `${id}`, ticker: `${ticker}`, name: `${name}`, cik: `${cik}` }
             });

@@ -82,6 +82,13 @@ function LineChart({ data }: LineChartProps) {
         };
     }, [chartData]);
 
+    useEffect(() => {
+        setChartData({
+            labels: data[0].financialFacts.slice(0).reverse().map((fact: FinancialFact) => fact.date),
+            datasets: data.map(filterData).filter(dataset => dataset !== null),
+        });
+    }, [data])
+
     return (
         <div ref={chartContainer} className={styles.chart_container}>
             <Line data={chartData} options={options} />
