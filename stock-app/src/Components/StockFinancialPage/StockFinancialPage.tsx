@@ -11,8 +11,8 @@ import { fetchStockAnnualData, fetchStockQuarterlyData } from '../../api/StockSe
 function StockFinancialPage() {
 
     const { state } = useLocation();
-    const [annualData, setAnnualData] = useState<FinancialData[]>([])
-    const [quarterlyData, setQuarterlyData] = useState<FinancialData[]>([])
+    const [annualData, setAnnualData] = useState<FinancialData[] | null>(null)
+    const [quarterlyData, setQuarterlyData] = useState<FinancialData[] | null>(null)
     const [showAnnualData, setShowAnnualData] = useState<boolean>(true)
     const [showQuarterlyData, setShowQuarterlyData] = useState<boolean>(false)
     const [isAbbreviated, setIsAbbreviated] = useState<boolean>(true);
@@ -28,8 +28,8 @@ function StockFinancialPage() {
     }
 
     useEffect(() => {
-        setAnnualData([])
-        setQuarterlyData([])
+        setAnnualData(null)
+        setQuarterlyData(null)
         setShowAnnualData(true)
         setShowQuarterlyData(false)
         setIsAbbreviated(true)
@@ -53,9 +53,16 @@ function StockFinancialPage() {
 
     return (
         <>
-            {annualData.length === 0 ? (
-                <p>Loading...</p>
-            ) : (
+            {
+                annualData === null || quarterlyData === null
+                ?
+                <p>Loading...</p>                
+                :
+                annualData.length === 0 && quarterlyData.length === 0
+                ?
+                <p>No data :(</p>
+                :
+                (
                 <>
                     <div className={styles.container}>
                         <div className={styles.top_container}>
