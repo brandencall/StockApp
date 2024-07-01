@@ -15,6 +15,7 @@
     <Folder Include="src\assets\" />
     <Folder Include="src\Components\Home\" />
     <Folder Include="src\Components\About\" />
+    <Folder Include="src\Components\Loading\" />
     <Folder Include="src\Components\StockFinancialPage\LineChart\" />
     <Folder Include="src\Components\ToggleSwitch\" />
     <Folder Include="src\Components\SearchBar\" />
