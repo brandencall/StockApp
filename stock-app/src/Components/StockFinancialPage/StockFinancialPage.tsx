@@ -7,6 +7,7 @@ import ToggleSwitch from '../ToggleSwitch/ToggleSwitch';
 import LineChart from './LineChart/LineChart';
 import { FinancialData } from '../../types'
 import { fetchStockAnnualData, fetchStockQuarterlyData } from '../../api/StockService'
+import Loading from 'react-loading';
 
 function StockFinancialPage() {
 
@@ -56,7 +57,10 @@ function StockFinancialPage() {
             {
                 annualData === null || quarterlyData === null
                 ?
-                <p>Loading...</p>                
+                <div className={styles.loading_contianer}>
+                        <Loading type={'bars'} color={'#000000'} height={200} width={200} />
+                        <h3>Currently loading stock data...</h3>
+                </div>                
                 :
                 annualData.length === 0 && quarterlyData.length === 0
                 ?
